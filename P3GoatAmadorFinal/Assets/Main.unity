@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1079,7 +1079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655686604}
   m_LocalRotation: {x: -0.1878325, y: 0.026661962, z: 0.0050604786, w: -0.9818262}
-  m_LocalPosition: {x: -0.72, y: 7.42688, z: -8.59}
+  m_LocalPosition: {x: 1.03, y: 6.99, z: -10.31}
   m_LocalScale: {x: 0.7575182, y: 0.79347, z: 0.7933587}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1095,12 +1095,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 655686604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6d3ff905719c845a4a6404bc4d4162, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e8d224b41171048951127136220c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carTransform: {fileID: 665483224}
-  followSpeed: 6.48
-  lookSpeed: 6.72
+  cameraOffset: {x: 1.03, y: 6.99, z: -10.31}
+  smoothSpeed: 1
+  rotationDamping: 10
 --- !u!1 &661071255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1551434314569090785, guid: 8879ceb493c598e4e9a090eb891cbe66, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 174
       objectReference: {fileID: 0}
     - target: {fileID: 1551434314569090785, guid: 8879ceb493c598e4e9a090eb891cbe66, type: 3}
       propertyPath: useSounds
@@ -1910,6 +1911,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1551434314569090785, guid: 8879ceb493c598e4e9a090eb891cbe66, type: 3}
       propertyPath: accelerationMultiplier
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551434314569090785, guid: 8879ceb493c598e4e9a090eb891cbe66, type: 3}
+      propertyPath: decelerationMultiplier
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1551434314569090785, guid: 8879ceb493c598e4e9a090eb891cbe66, type: 3}
