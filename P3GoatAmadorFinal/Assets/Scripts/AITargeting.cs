@@ -32,7 +32,7 @@ public class AITargeting : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the collision is with the main character
-        if (collision.gameObject.CompareTag("MainCharacter"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             // Increase the score
             score++;
